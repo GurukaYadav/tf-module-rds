@@ -1,3 +1,3 @@
 locals {
-  NAME_TAG= "${var.PROJECT}-${var.ENV}"
+  tag_name= "${var.PROJECT}-${var.ENV}"
 }
