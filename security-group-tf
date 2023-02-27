@@ -1,12 +1,12 @@
 resource "aws_security_group" "rds" {
-  name        = "allow_ssh"
-  description = "Allow SSH inbound traffic"
+  name        = "local.NAME_TAG-rds-sg"
+  description = "Allow TCP inbound traffic"
   vpc_id      = var.VPC_ID
 
   ingress {
-    description      = "SSH from VPC"
-    from_port        = 22
-    to_port          = 22
+    description      = "TCP from VPC"
+    from_port        = var.PORT
+    to_port          = var.PORT
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
   }
@@ -16,11 +16,10 @@ resource "aws_security_group" "rds" {
     to_port          = 0
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
-    ipv6_cidr_blocks = ["::/0"]
   }
 
   tags = {
-    Name = "allow_ssh"
+    Name = "${var.PROJECT}-${var.ENV}-rds-sg"
   }
 
 }

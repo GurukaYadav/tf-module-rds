@@ -7,3 +7,6 @@ variable "PASSWORD" {}
 variable "PARAMETER_GROUP_NAME" {}
 variable "VPC_ID" {}
 variable "PRIVATE_SUBNET_ID" {}
+variable "PORT" {}
+variable "PROJECT" {}
+variable "ENV" {}
