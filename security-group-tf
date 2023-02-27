@@ -8,7 +8,7 @@ resource "aws_security_group" "rds" {
     from_port        = var.PORT
     to_port          = var.PORT
     protocol         = "tcp"
-    cidr_blocks      = module.PRIVATE_SUBNETS_CIDR
+    cidr_blocks      = var.PRIVATE_SUBNET_CIDR
   }
 
   egress {

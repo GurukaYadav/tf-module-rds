@@ -11,3 +11,4 @@ variable "PORT" {}
 variable "PROJECT" {}
 variable "ENV" {}
 variable "PG_FAMILY" {}
+variable "PRIVATE_SUBNET_CIDR" {}
