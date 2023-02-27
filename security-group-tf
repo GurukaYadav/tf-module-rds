@@ -19,7 +19,7 @@ resource "aws_security_group" "rds" {
   }
 
   tags = {
-    Name = "${var.PROJECT}-${var.ENV}-rds-sg"
+    Name = "local.NAME_TAG-rds-sg"
   }
 
 }
