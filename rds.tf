@@ -10,6 +10,6 @@ resource "aws_db_instance" "rds" {
   skip_final_snapshot  = true
   db_subnet_group_name = var.PRIVATE_SUBNET_ID
   vpc_security_group_ids = [aws_security_group.main.id]
-  identifier = "local.tag_name"-rds
+  identifier = "${local.TAG_NAME}-rds"
 
 }

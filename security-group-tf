@@ -1,5 +1,5 @@
-resource "aws_security_group" "main" {
-  name        = "local.tag_name"-rds-sg
+resource  "aws_security_group" "main" {
+  name        = "${local.TAG_NAME}-rds-sg"
   description = "Allow TCP inbound traffic"
   vpc_id      = var.VPC_ID
 
@@ -19,7 +19,7 @@ resource "aws_security_group" "main" {
   }
 
   tags = {
-    Name = "local.tag_name"-rds-sg
+    Name = "${local.TAG_NAME}-rds-sg"
   }
 
 }
