@@ -10,3 +10,4 @@ variable "PRIVATE_SUBNET_ID" {}
 variable "PORT" {}
 variable "PROJECT" {}
 variable "ENV" {}
+variable "PG_FAMILY" {}
