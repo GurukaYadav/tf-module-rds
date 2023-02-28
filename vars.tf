@@ -4,7 +4,7 @@ variable "ENGINE_VERSION" {}
 variable "RDS_INSTANCE_CLASS" {}
 variable "USER_NAME" {}
 variable "PASSWORD" {}
-variable "PARAMETER_GROUP_NAME" {}
+//variable "PARAMETER_GROUP_NAME" {}
 variable "VPC_ID" {}
 variable "PRIVATE_SUBNET_ID" {}
 variable "RDS_PORT" {}
