@@ -1,6 +1,6 @@
 resource "aws_db_instance" "rds" {
   allocated_storage      = 10
-  db_name                = var.RDS_DB_NAME
+  db_name                = var.DB_NAME
   engine                 = var.RDS_ENGINE
   engine_version         = var.RDS_ENGINE_VERSION
   instance_class         = var.RDS_INSTANCE_CLASS
