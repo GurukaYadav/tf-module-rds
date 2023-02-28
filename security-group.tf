@@ -4,9 +4,9 @@ resource "aws_security_group" "rds" {
   vpc_id      = var.VPC_ID
 
   ingress {
-    description      = "TCP from VPC"
-    from_port        = var.PORT
-    to_port          = var.PORT
+    description      = "${local.TAG_NAME}-rds-sg"
+    from_port        = var.RDS_PORT
+    to_port          = var.RDS_PORT
     protocol         = "tcp"
     cidr_blocks      = var.PRIVATE_SUBNET_CIDR
   }
