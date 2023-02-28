@@ -1,4 +1,5 @@
 variable "DB_NAME" {}
+variable "RDS_ENGINE" {}
 variable "RDS_ENGINE_VERSION" {}
 variable "RDS_INSTANCE_CLASS" {}
 //variable "PARAMETER_GROUP_NAME" {}
