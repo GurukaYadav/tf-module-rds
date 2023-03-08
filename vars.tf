@@ -10,3 +10,4 @@ variable "PROJECT" {}
 variable "ENV" {}
 variable "PG_FAMILY" {}
 variable "PRIVATE_SUBNET_CIDR" {}
+variable "WORKSTATION_IP" {}
