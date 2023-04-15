@@ -1,4 +1,7 @@
 resource "null_resource" "null" {
+  triggers = {
+    abc = timestamp()
+  }
   provisioner "local-exec" {
     command = <<EOF
 curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip"
